@@ -48,6 +48,7 @@ public:
     //NANO 33 BLE SENSe min 0 max 80
     //NICLA_VISION min 0 max 8
     void setGain(int gain);
+    int getGain();
 
     void setPins(int dinPin, int clkPin);
     void setChannels(int channels);

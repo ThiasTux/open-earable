@@ -210,6 +210,10 @@ void PDM_Mic::setGain(int gain) {
     if (_available) nrf_pdm_gain_set(_gain, _gain);
 }
 
+int PDM_Mic::getGain() {
+    return _gain;
+}
+
 int PDM_Mic::getSampleRate() {
     return _sampleRate;
 }
