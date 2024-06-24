@@ -13,6 +13,7 @@
 #include <audio_pdm/PDM_Mic.h>
 #include <audio_pdm/WavRecorder.h>
 #include <audio_pdm/Recorder.h>
+#include <audio_pdm/PDM_Mic_Service.h>
 
 #include <audio_play/WavPlayer.h>
 #include <audio_play/JinglePlayer.h>
@@ -51,6 +52,7 @@ public:
 
         _interface = new SensorManager_Earable();
         _battery = new Battery_Service();
+        pdm_mic_config = new PDM_MIC_Service();
 
         sd_manager.begin();
 
@@ -89,6 +91,7 @@ public:
         play_service.begin();
         button_service.begin();
         led_service.begin();
+        pdm_mic_config->begin(&pdm_mic);
 
         task_manager.begin();
 
@@ -131,6 +134,7 @@ public:
 private:
     SensorManager_Earable * _interface{};   // Created new
     Battery_Service * _battery{};           // Created new
+    PDM_MIC_Service * pdm_mic_config{};
 
     Stream * _debug{};
 
