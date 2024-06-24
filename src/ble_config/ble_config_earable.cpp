@@ -12,6 +12,7 @@ const char * buttonStateUuid = "29c10f38-4773-11ee-be56-0242ac120002";
 const char * ledServiceUuid = "81040a2e-4819-11ee-be56-0242ac120002";
 const char * ledSetStatusUuid = "81040e7a-4819-11ee-be56-0242ac120002";
 
-
+const char * pdmMicConfigService = "acda9f68-b698-4926-8da1-20dccb4b27fd";
+const char * pdmMicGainCharUuid = "acda9f68-b698-4936-8da1-20dccb4b27fd";
 
 

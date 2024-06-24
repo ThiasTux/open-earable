@@ -13,5 +13,7 @@ extern const char * buttonStateUuid;
 extern const char * ledServiceUuid;
 extern const char * ledSetStatusUuid;
 
+extern const char * pdmMicConfigService;
+extern const char * pdmMicGainCharUuid;
 
 #endif //OPEN_EARABLE_BLE_CONFIG_EARABLE_H
